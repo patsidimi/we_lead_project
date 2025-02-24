@@ -320,7 +320,7 @@ def clear_inputs():
     return '', '', '', '', '', '', ''
 
 with gr.Blocks() as demo:
-    gr.Image("/content/Sample6.jpeg", show_label=True, height=200, width=1000)
+    gr.Image("/content/logo.jpeg", show_label=True, height=200, width=1000)
     gr.Markdown("# 🌿 Urban eco miles")
 
     with gr.Row():
