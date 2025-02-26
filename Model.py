@@ -24,7 +24,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Φόρτωση επεξεργασμένων δεδομένων
-df = pd.read_excel("/content/processed_auto_mpg (4).xlsx")
+df = pd.read_excel("/content/processed_auto_mpg.xlsx")
 
 df.head()
 
