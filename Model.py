@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 #εισάγω τις απαραίτητες βιβλιοθήκες
 import numpy as np
 import pandas as pd
@@ -26,7 +24,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Φόρτωση επεξεργασμένων δεδομένων
-df = pd.read_excel("/content/processed_auto_mpg.xlsx")
+df = pd.read_excel("/content/processed_auto_mpg (4).xlsx")
 
 df.head()
 
@@ -548,18 +546,6 @@ def predict_rf(results, X_new):
         'predictions': predictions,
         'probabilities': probabilities
     }
-
-
-
-''''
-# Αργότερα, για προβλέψεις:
-loaded_results = load_rf_model()
-new_data = pd.DataFrame(...)  # τα νέα δεδομένα
-predictions = predict_rf(loaded_results, new_data)
-
-print("Προβλέψεις:", predictions['predictions'])
-print("Πιθανότητες:\n", predictions['probabilities'])
-"""
 
 # Εκπαίδευση του μοντέλου
 results = train_random_forest_with_smote(x, y)
